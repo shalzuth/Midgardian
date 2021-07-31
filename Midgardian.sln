@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midgardian", "Midgardian\Midgardian.csproj", "{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnrealSharp", "UnrealSharp\UnrealSharp\UnrealSharp.csproj", "{B34C4537-EB0C-4E38-A21C-1327752CA4AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34C4537-EB0C-4E38-A21C-1327752CA4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34C4537-EB0C-4E38-A21C-1327752CA4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34C4537-EB0C-4E38-A21C-1327752CA4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34C4537-EB0C-4E38-A21C-1327752CA4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C57D9FD-D5A4-43DA-8F3E-4381831C5350}
+	EndGlobalSection
+EndGlobal

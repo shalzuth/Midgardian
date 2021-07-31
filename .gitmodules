@@ -1,0 +1,3 @@
+[submodule "UnrealSharp"]
+	path = UnrealSharp
+	url = https://github.com/shalzuth/UnrealSharp

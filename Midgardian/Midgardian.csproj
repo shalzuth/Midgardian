@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C965DFB-19F2-4689-A12D-F5C9A0624D0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Midgardian</RootNamespace>
+    <AssemblyName>Midgardian</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Midgard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDK\ActorLayerUtilities.cs" />
+    <Compile Include="SDK\ActorSequence.cs" />
+    <Compile Include="SDK\Addresses.cs" />
+    <Compile Include="SDK\AdvancedSessions.cs" />
+    <Compile Include="SDK\AdvancedSteamSessions.cs" />
+    <Compile Include="SDK\AIModule.cs" />
+    <Compile Include="SDK\AkAudio.cs" />
+    <Compile Include="SDK\AndroidPermission.cs" />
+    <Compile Include="SDK\AnimationCore.cs" />
+    <Compile Include="SDK\AnimationSharing.cs" />
+    <Compile Include="SDK\AnimGraphRuntime.cs" />
+    <Compile Include="SDK\AppleImageUtils.cs" />
+    <Compile Include="SDK\ArchVisCharacter.cs" />
+    <Compile Include="SDK\AssetRegistry.cs" />
+    <Compile Include="SDK\AssetTags.cs" />
+    <Compile Include="SDK\AsyncLoadingScreen.cs" />
+    <Compile Include="SDK\AudioAnalyzer.cs" />
+    <Compile Include="SDK\AudioCapture.cs" />
+    <Compile Include="SDK\AudioExtensions.cs" />
+    <Compile Include="SDK\AudioMixer.cs" />
+    <Compile Include="SDK\AudioPlatformConfiguration.cs" />
+    <Compile Include="SDK\AudioSynesthesia.cs" />
+    <Compile Include="SDK\AugmentedReality.cs" />
+    <Compile Include="SDK\AvfMediaFactory.cs" />
+    <Compile Include="SDK\Backend.cs" />
+    <Compile Include="SDK\Bifrost.cs" />
+    <Compile Include="SDK\BifrostParty.cs" />
+    <Compile Include="SDK\BuildPatchServices.cs" />
+    <Compile Include="SDK\CableComponent.cs" />
+    <Compile Include="SDK\CgSDK.cs" />
+    <Compile Include="SDK\Chaos.cs" />
+    <Compile Include="SDK\ChaosCloth.cs" />
+    <Compile Include="SDK\ChaosNiagara.cs" />
+    <Compile Include="SDK\ChaosSolverEngine.cs" />
+    <Compile Include="SDK\CinematicCamera.cs" />
+    <Compile Include="SDK\ClothingSystemRuntimeCommon.cs" />
+    <Compile Include="SDK\ClothingSystemRuntimeInterface.cs" />
+    <Compile Include="SDK\ClothingSystemRuntimeNv.cs" />
+    <Compile Include="SDK\CoreUObject.cs" />
+    <Compile Include="SDK\CustomMeshComponent.cs" />
+    <Compile Include="SDK\DatasmithContent.cs" />
+    <Compile Include="SDK\EditableMesh.cs" />
+    <Compile Include="SDK\Engine.cs" />
+    <Compile Include="SDK\EngineMessages.cs" />
+    <Compile Include="SDK\EngineSettings.cs" />
+    <Compile Include="SDK\EyeTracker.cs" />
+    <Compile Include="SDK\FacialAnimation.cs" />
+    <Compile Include="SDK\FieldSystemEngine.cs" />
+    <Compile Include="SDK\Foliage.cs" />
+    <Compile Include="SDK\GameplayTags.cs" />
+    <Compile Include="SDK\GameplayTasks.cs" />
+    <Compile Include="SDK\GeometryCache.cs" />
+    <Compile Include="SDK\GeometryCacheTracks.cs" />
+    <Compile Include="SDK\GeometryCollectionEngine.cs" />
+    <Compile Include="SDK\GeometryCollectionTracks.cs" />
+    <Compile Include="SDK\GooglePAD.cs" />
+    <Compile Include="SDK\HeadMountedDisplay.cs" />
+    <Compile Include="SDK\Hotfix.cs" />
+    <Compile Include="SDK\HoudiniNiagara.cs" />
+    <Compile Include="SDK\ImageWrapper.cs" />
+    <Compile Include="SDK\ImageWriteQueue.cs" />
+    <Compile Include="SDK\ImgMedia.cs" />
+    <Compile Include="SDK\ImgMediaFactory.cs" />
+    <Compile Include="SDK\InputCore.cs" />
+    <Compile Include="SDK\InteractiveToolsFramework.cs" />
+    <Compile Include="SDK\JsonUtilities.cs" />
+    <Compile Include="SDK\Landscape.cs" />
+    <Compile Include="SDK\LevelSequence.cs" />
+    <Compile Include="SDK\LightPropagationVolumeRuntime.cs" />
+    <Compile Include="SDK\Lobby.cs" />
+    <Compile Include="SDK\LocationServicesBPLibrary.cs" />
+    <Compile Include="SDK\MagicLeapARPin.cs" />
+    <Compile Include="SDK\MagicLeapSharedWorld.cs" />
+    <Compile Include="SDK\MaterialShaderQualitySettings.cs" />
+    <Compile Include="SDK\MediaAssets.cs" />
+    <Compile Include="SDK\MediaCompositing.cs" />
+    <Compile Include="SDK\MediaUtils.cs" />
+    <Compile Include="SDK\MeshDescription.cs" />
+    <Compile Include="SDK\MotoSynth.cs" />
+    <Compile Include="SDK\MoviePlayer.cs" />
+    <Compile Include="SDK\MovieScene.cs" />
+    <Compile Include="SDK\MovieSceneCapture.cs" />
+    <Compile Include="SDK\MovieSceneTracks.cs" />
+    <Compile Include="SDK\MRMesh.cs" />
+    <Compile Include="SDK\NavigationSystem.cs" />
+    <Compile Include="SDK\NetCore.cs" />
+    <Compile Include="SDK\Niagara.cs" />
+    <Compile Include="SDK\NiagaraAnimNotifies.cs" />
+    <Compile Include="SDK\NiagaraCore.cs" />
+    <Compile Include="SDK\NiagaraShader.cs" />
+    <Compile Include="SDK\OnlineSubsystem.cs" />
+    <Compile Include="SDK\OnlineSubsystemSteam.cs" />
+    <Compile Include="SDK\OnlineSubsystemUtils.cs" />
+    <Compile Include="SDK\OnlineSubsystemUtilsBifrost.cs" />
+    <Compile Include="SDK\Overlay.cs" />
+    <Compile Include="SDK\PacketHandler.cs" />
+    <Compile Include="SDK\Party.cs" />
+    <Compile Include="SDK\PhysicsCore.cs" />
+    <Compile Include="SDK\PhysXVehicles.cs" />
+    <Compile Include="SDK\ProceduralMeshComponent.cs" />
+    <Compile Include="SDK\PropertyAccess.cs" />
+    <Compile Include="SDK\PropertyPath.cs" />
+    <Compile Include="SDK\Qos.cs" />
+    <Compile Include="SDK\Rejoin.cs" />
+    <Compile Include="SDK\Renderer.cs" />
+    <Compile Include="SDK\Serialization.cs" />
+    <Compile Include="SDK\SessionMessages.cs" />
+    <Compile Include="SDK\Shared.cs" />
+    <Compile Include="SDK\Shift.cs" />
+    <Compile Include="SDK\ShiftUI.cs" />
+    <Compile Include="SDK\SignificanceManager.cs" />
+    <Compile Include="SDK\Slate.cs" />
+    <Compile Include="SDK\SlateCore.cs" />
+    <Compile Include="SDK\SoundFields.cs" />
+    <Compile Include="SDK\StaticMeshDescription.cs" />
+    <Compile Include="SDK\Synthesis.cs" />
+    <Compile Include="SDK\TcpMessaging.cs" />
+    <Compile Include="SDK\TemplateSequence.cs" />
+    <Compile Include="SDK\TimeManagement.cs" />
+    <Compile Include="SDK\TOM.cs" />
+    <Compile Include="SDK\UdpMessaging.cs" />
+    <Compile Include="SDK\UMG.cs" />
+    <Compile Include="SDK\UObjectPlugin.cs" />
+    <Compile Include="SDK\VariantManagerContent.cs" />
+    <Compile Include="SDK\VectorVM.cs" />
+    <Compile Include="SDK\VivoxCore.cs" />
+    <Compile Include="SDK\WmfMediaFactory.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnrealSharp\UnrealSharp\UnrealSharp.csproj">
+      <Project>{b34c4537-eb0c-4e38-a21c-1327752ca4aa}</Project>
+      <Name>UnrealSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
