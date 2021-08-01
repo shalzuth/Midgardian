@@ -32,7 +32,7 @@ namespace Midgardian
         }
         public void Start()
         {
-            while (!Hotkeys.IsPressed(Keys.Delete))
+            while (!Hotkeys.IsPressed(Keys.Delete) && !process.HasExited)
             {
                 overlay.Begin();
                 if (EngineLoop() > 0) { UEObject.ClearCache(); }
@@ -65,6 +65,8 @@ namespace Midgardian
                 var sb = new StringBuilder();
                 sb.AppendLine("Shalzuth's Helper Tool");
                 sb.AppendLine("FPS : " + overlay.MeasuredFps.ToString("0.00"));
+                sb.AppendLine("Hide menu (Insert)");
+                sb.AppendLine("Unload (Delete)");
                 var fields = cfg.GetType().GetFields();
                 for(var i = 1; i < fields.Length; i++) sb.AppendLine(fields[i].Name + "(F" + i + ")");
                 overlay.DrawText(sb.ToString(), new Vector2(20, 20), Color.OrangeRed);
